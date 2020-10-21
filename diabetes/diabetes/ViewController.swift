@@ -12,11 +12,11 @@ import UIKit
 
 
 class ViewController: UIViewController {
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-//        picker.dataSource = self
- //       picker.delegate = self
+    // picker.dataSource = self
+    //    picker.delegate = self
     }
 
 
