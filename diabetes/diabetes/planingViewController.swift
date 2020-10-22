@@ -8,12 +8,17 @@
 
 import UIKit
 
-class planingViewController: UIViewController {
+class planingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     @IBOutlet weak var planingTextField: UITextField!
     
     @IBOutlet weak var doctorsTextField: UITextField!
     
     @IBOutlet weak var typeTextField: UITextField!
+    let types = ["النوع الثاني","النوع الاول"]
+    var pickerView = UIPickerView()
+    
+    
+
     let typePicker = UIPickerView()
     let doctorsPicker = UIPickerView()
     let planingPicker = UIDatePicker()
@@ -22,6 +27,7 @@ class planingViewController: UIViewController {
 showDatePicker()
         // Do any additional setup after loading the view.
     }
+   
     
     func showDatePicker() {
         planingPicker.datePickerMode = .date
