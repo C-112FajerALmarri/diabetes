@@ -1,5 +1,5 @@
 //
-//  VideoViewController.swift
+//  stepViewController.swift
 //  diabetes
 //
 //  Created by Sarah Almarii on 10/23/20.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class VideoViewController: UIViewController {
-
+class stepViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
-    var text = ""
+    var step: String!
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = text
+        label.text = step 
         // Do any additional setup after loading the view.
     }
     

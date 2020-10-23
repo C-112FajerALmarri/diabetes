@@ -1,16 +1,17 @@
 //
-//  TableTableViewController.swift
+//  stepTableViewController.swift
 //  diabetes
 //
-//  Created by Sarah Almarii on 10/19/20.
+//  Created by Sarah Almarii on 10/23/20.
 //  Copyright © 2020 fajer. All rights reserved.
 //
 
 import UIKit
 
-class TableTableViewController: UITableViewController {
-var array = ["في حال حدوث انخفاض في سكر الدم" ,"في حال حدوث ارتفاع في سكر الدم"]
-    var steps = ["اكل نوع واحد من الفاكهة او اكل قطعة من الحلوى او شرب عصير او اكل قطعه من المعجنات","شرب ماء دافىء او اخذ جرعه مصححه من الانسولين "]
+class stepTableViewController: UITableViewController {
+    @IBOutlet weak var step: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,26 +24,26 @@ var array = ["في حال حدوث انخفاض في سكر الدم" ,"في ح�
 
     // MARK: - Table view data source
 
-   
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return array.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        cell.textLabel?.text = array[indexPath.row]
+        // Configure the cell...
 
         return cell
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = steps[indexPath.row]
-        performSegue(withIdentifier: "link", sender: data)
-  
-    }
+    */
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -78,14 +79,14 @@ var array = ["في حال حدوث انخفاض في سكر الدم" ,"في ح�
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! stepViewController
-        vc.step = sender as! String
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }
