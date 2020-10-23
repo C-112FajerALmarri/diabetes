@@ -37,8 +37,8 @@ class planingViewController: UIViewController, UITextFieldDelegate{
         doctorTextField.inputView = doctorsPicker
         typeTextField.inputView = typePicker
         
-        doctorTextField.placeholder = "select doctor"
-        typeTextField.placeholder = "select type"
+        doctorTextField.placeholder = "اختر طبيبك"
+        typeTextField.placeholder = "نوع السكري"
         
         doctorTextField.textAlignment = .center
         typeTextField.textAlignment = .center
