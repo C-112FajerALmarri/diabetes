@@ -20,6 +20,8 @@
 		82B857C1254083F300E9BA51 /* planingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B857C0254083F300E9BA51 /* planingViewController.swift */; };
 		82B857C52540DDB500E9BA51 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B857C42540DDB500E9BA51 /* login.swift */; };
 		82B857C72540DDEC00E9BA51 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B857C62540DDEC00E9BA51 /* signup.swift */; };
+		82B857C92542F59E00E9BA51 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B857C82542F59D00E9BA51 /* VideoViewController.swift */; };
+		82B857CD2543083F00E9BA51 /* codeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B857CC2543083F00E9BA51 /* codeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		82B857C0254083F300E9BA51 /* planingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planingViewController.swift; sourceTree = "<group>"; };
 		82B857C42540DDB500E9BA51 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		82B857C62540DDEC00E9BA51 /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup.swift; sourceTree = "<group>"; };
+		82B857C82542F59D00E9BA51 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		82B857CC2543083F00E9BA51 /* codeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				825205AF2538AAD200902B7B /* ViewController.swift */,
 				82B857C0254083F300E9BA51 /* planingViewController.swift */,
 				82B857BE253F849600E9BA51 /* Main.storyboard */,
+				82B857CC2543083F00E9BA51 /* codeViewController.swift */,
+				82B857C82542F59D00E9BA51 /* VideoViewController.swift */,
 				82B857C62540DDEC00E9BA51 /* signup.swift */,
 				82B857C42540DDB500E9BA51 /* login.swift */,
 				825205C9253E1F3E00902B7B /* VCViewController.swift */,
@@ -164,7 +170,9 @@
 				825205C02538C75500902B7B /* File.swift in Sources */,
 				825205C8253E156300902B7B /* TableViewCell.swift in Sources */,
 				82B857C52540DDB500E9BA51 /* login.swift in Sources */,
+				82B857CD2543083F00E9BA51 /* codeViewController.swift in Sources */,
 				825205AC2538AAD200902B7B /* AppDelegate.swift in Sources */,
+				82B857C92542F59E00E9BA51 /* VideoViewController.swift in Sources */,
 				825205AE2538AAD200902B7B /* SceneDelegate.swift in Sources */,
 				82B857C72540DDEC00E9BA51 /* signup.swift in Sources */,
 				82B857C1254083F300E9BA51 /* planingViewController.swift in Sources */,

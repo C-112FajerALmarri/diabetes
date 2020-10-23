@@ -10,6 +10,7 @@ import UIKit
 
 class TableTableViewController: UITableViewController {
 var array = ["في حال حدوث انخفاض في سكر الدم" ,"في حال حدوث ارتفاع في سكر الدم"]
+    var steps = ["high","low"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,8 +38,11 @@ var array = ["في حال حدوث انخفاض في سكر الدم" ,"في ح�
 
         return cell
     }
-    
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = array[indexPath.row]
+        performSegue(withIdentifier: "link", sender: data)
+  
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -74,14 +78,15 @@ var array = ["في حال حدوث انخفاض في سكر الدم" ,"في ح�
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let step = sender as! VideoViewController
+        let vc = segue.destination as! VideoViewController
+    
     }
-    */
+    
 
 }
